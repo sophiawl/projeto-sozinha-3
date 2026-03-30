@@ -1,0 +1,82 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "cabeça cabeça cabeça"
+    "braço corpo corpo"
+    "perna perna perna";
+    grid-template-rows: 200px;
+    grid-template-columns: 200px;
+}
+
+header{
+    grid-area: cabeça;
+    background-color: plum;
+} 
+
+aside{
+    grid-area: braço;
+    background-color: rgb(248, 177, 248);
+}
+
+main{
+    grid-area: corpo;
+    background-color: powderblue;
+}
+
+footer{
+    grid-area: perna;
+    background-color: plum;
+}
+
+@media only screen and (max-width: 450px) {
+    body{
+        grid-template-areas: "cabeça"
+                             "corpo"
+                             "perna";
+        grid-template-columns: auto;
+        grid-template-rows: 150px auto 200px;
+    }
+    aside{
+        display: none;
+    }
+}
+
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: rgb(170, 215, 241) 2px solid;
+    background-color: rgb(179, 183, 240);
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.img-card{
+    width: 300px;
+    height: auto;
+}
+
+.texto-card{
+    color: aliceblue;
+    font-size: x-large;
+}
+
+.preco-card{
+    color: rgb(241, 161, 177);
+    font-size: xx-large;
+}
+
+.botao{
+    background-color: aqua;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    color: black;
+}
