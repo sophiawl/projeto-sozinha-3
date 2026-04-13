@@ -10,22 +10,22 @@ body{
 
 header{
     grid-area: cabeça;
-    background-color: plum;
+    background-color: rgb(80, 218, 252);
 } 
 
 aside{
     grid-area: braço;
-    background-color: rgb(248, 177, 248);
+    background-color: rgb(11, 145, 185);
 }
 
 main{
     grid-area: corpo;
-    background-color: powderblue;
+    background-color: rgb(218, 253, 255);
 }
 
 footer{
     grid-area: perna;
-    background-color: plum;
+    background-color: rgb(160, 245, 245);
 }
 
 @media only screen and (max-width: 450px) {
@@ -49,8 +49,8 @@ footer{
 }
 
 .card{
-    border: rgb(170, 215, 241) 2px solid;
-    background-color: rgb(179, 183, 240);
+    border: rgb(66, 146, 146) 2px solid;
+    background-color: rgb(255, 251, 251);
     width: 400px;
     padding: 20px;
     text-align: center;
@@ -64,17 +64,17 @@ footer{
 }
 
 .texto-card{
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-size: x-large;
 }
 
 .preco-card{
-    color: rgb(241, 161, 177);
+    color: rgb(0, 0, 0);
     font-size: xx-large;
 }
 
 .botao{
-    background-color: aqua;
+    background-color: rgb(12, 241, 230);
     align-items: center;
     padding: 10px;
     border-radius: 15px;
